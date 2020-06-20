@@ -1,0 +1,16 @@
+[[package]]
+category = "main"
+description = "Exposing python functions to the command line"
+name = "pyopt"
+optional = false
+python-versions = "*"
+version = "0.84"
+
+[metadata]
+content-hash = "c84098d1357551e6aee43bf25a7087c36c2e1675dcd0863847c46e0ec51a3fc5"
+python-versions = "^3.7"
+
+[metadata.files]
+pyopt = [
+    {file = "pyopt-0.84.zip", hash = "sha256:e4230ae1924189c805551d1a1c153c608aa9600ded829d5126fd8a8274110be4"},
+]
