@@ -6,7 +6,9 @@ authors = ["Ryan O'Sullivan <osullivryan@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-pyopt = "^0.84"
+deap = "^1.3.1"
+numpy = "^1.19.1"
+ipython = "^7.18.1"
 
 [tool.poetry.dev-dependencies]
 
