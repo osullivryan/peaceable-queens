@@ -1,2 +1,4 @@
 .venv/
 .vscode/
+peaceable_queens.egg-info/
+peaceable_queens/__pycache__/
