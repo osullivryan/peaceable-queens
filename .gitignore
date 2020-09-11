@@ -2,3 +2,4 @@
 .vscode/
 peaceable_queens.egg-info/
 peaceable_queens/__pycache__/
+tests/__pycache__/
