@@ -95,11 +95,9 @@ def main(board_size: int, n_pieces: int):
                 population=pop,
                 halloffame=hof,
                 logbook=logbook,
-                rndstate=random.getstate(),
-                stats=stats,
             )
             print('saving')
-            with open(f"{checkpoint_dir}/{board_size}_{n_pieces}_{save_interv}.pkl", "wb") as cp_file:
+            with open(f"{checkpoint_dir}/{board_size}_{n_pieces}_{current_gen}.pkl", "wb") as cp_file:
                 pickle.dump(cp, cp_file)
 
         current_gen += 1
