@@ -1,0 +1,13 @@
+setup.py
+src/peacablequeens/__init__.py
+src/peacablequeens/__main__.py
+src/peacablequeens/board.py
+src/peacablequeens/cost.py
+src/peacablequeens/optimize.py
+src/peacablequeens/peacable_queens_types.py
+src/peacablequeens.egg-info/PKG-INFO
+src/peacablequeens.egg-info/SOURCES.txt
+src/peacablequeens.egg-info/dependency_links.txt
+src/peacablequeens.egg-info/requires.txt
+src/peacablequeens.egg-info/top_level.txt
+src/peacablequeens/results/2020_09_11_14_18_54/16_38_10000.pkl

@@ -1,6 +1,5 @@
-
-from peaceable_queens.types import BLACK_PIECES, WHITE_PIECES
-from peaceable_queens.cost import count_same_space, count_diagonals, count_vertical_and_horizontal
+from peaceablequeens.types import BLACK_PIECES, WHITE_PIECES
+from peaceablequeens.cost import count_same_space, count_diagonals, count_vertical_and_horizontal
 import numpy as np
 
 def test_count_same_space():

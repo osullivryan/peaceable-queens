@@ -1,4 +1,4 @@
-from peaceable_queens.peacable_queens_types import BLACK_PIECES, WHITE_PIECES
+from peaceablequeens.peacable_queens_types import BLACK_PIECES, WHITE_PIECES
 import numpy as np
 from typing import List
 from numba import njit, int64

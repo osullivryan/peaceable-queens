@@ -1,0 +1,13 @@
+setup.py
+src/peaceablequeens/__init__.py
+src/peaceablequeens/__main__.py
+src/peaceablequeens/board.py
+src/peaceablequeens/cost.py
+src/peaceablequeens/optimize.py
+src/peaceablequeens/peacable_queens_types.py
+src/peaceablequeens.egg-info/PKG-INFO
+src/peaceablequeens.egg-info/SOURCES.txt
+src/peaceablequeens.egg-info/dependency_links.txt
+src/peaceablequeens.egg-info/requires.txt
+src/peaceablequeens.egg-info/top_level.txt
+src/peaceablequeens/results/2020_09_11_14_18_54/16_38_10000.pkl

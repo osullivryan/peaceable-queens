@@ -1,6 +1,6 @@
-from peaceable_queens.peacable_queens_types import BLACK_PIECES, WHITE_PIECES
+from peaceablequeens.peacable_queens_types import BLACK_PIECES, WHITE_PIECES
 from typing import List
-from peaceable_queens.board import create_board
+from peaceablequeens.board import create_board
 import numpy as np
 from numba import jit, njit
 

@@ -1,8 +1,8 @@
-from peaceable_queens.board import create_board
+from peaceablequeens.board import create_board
 import random
 from deap import base, tools, algorithms, creator
 import numpy as np
-from peaceable_queens import cost
+from peaceablequeens import cost
 import multiprocessing
 import pickle
 import datetime
@@ -24,16 +24,16 @@ def main(board_size: int, n_pieces: int):
     )
     toolbox.register("population", tools.initRepeat, list, toolbox.individual)
     toolbox.register("select", tools.selBest)
-    toolbox.register("mate", tools.cxUniform, indpb=0.5)
+    toolbox.register("mate", tools.cxTwoPoint)
     toolbox.register(
-        "mutate", tools.mutUniformInt, low=0, up=board_size ** 2 - 1, indpb=0.10
+        "mutate", tools.mutUniformInt, low=0, up=board_size ** 2 - 1, indpb=0.9
     )
     toolbox.register(
         "evaluate", cost.cost, n_pieces_each=n_pieces, board_size=board_size
     )
 
     # Differential evolution parameters
-    MU = 300
+    MU = 3000
     N_GEN = 1e10
     print_interv = 100
     save_interv = 10000
@@ -63,10 +63,10 @@ def main(board_size: int, n_pieces: int):
     pop, logbook = algorithms.eaMuPlusLambda(
         pop,
         toolbox,
-        cxpb=0.5,
+        cxpb=0.8,
         mu=MU,
         lambda_=MU,
-        mutpb=0.35,
+        mutpb=0.2,
         ngen=1,
         stats=stats,
         halloffame=hof,
@@ -108,7 +108,6 @@ if __name__ == "__main__":
     board_size = 16
     n_pieces = 38
     last_pop, hof, logbook = main(board_size, n_pieces)
-    print(float(hof[0].fitness.values[0]))
     if hof[0].fitness.values[0] == 0:
         black_pieces = hof[0][:n_pieces]
         white_pieces = hof[0][n_pieces:]
